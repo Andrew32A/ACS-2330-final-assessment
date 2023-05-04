@@ -45,15 +45,73 @@ img {
 /* tablet */
 
 @media only screen and (max-width: 800px) {
+  .container {
+    width: 500px;
+    margin: auto;
+  }
+
   .container > div {
     flex-direction: column;
     width: 100%;
   }
 
   form {
-    width: 75%;
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 1em;
+  }
+
+  label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  label span {
+    width: 100%;
+    text-align: right;
+    margin-right: 0;
+    padding-right: 1em;
+  }
+
+  input {
+    width: 400%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border: none;
+    border-bottom: 1px solid black;
+    order: -1;
+  }
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 0;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container > div {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  form {
+    width: 100%;
+    margin: auto;
+    margin-top: 2em;
     margin-bottom: 30px;
   }
 
@@ -66,56 +124,20 @@ img {
   }
 
   label span {
-    width: 100%;
+    width: 50%;
     text-align: center;
     margin-right: 0;
+    padding-right: 1em;
+    padding-bottom: 1em;
   }
 
   input {
-    width: 100%;
+    width: 80%;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   img {
-    width: 100%;
-    height: auto;
-    border: none;
-    border-bottom: 1px solid black;
-    order: -1;
+    padding-top: 2em;
   }
-}
-
-
-/* mobile */
-
-@media only screen and (max-width: 480px) {
-  
-
-
-  /* form {
-    width: 90%;
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
-
-  label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-
-  label span {
-    width: 100%;
-    text-align: center;
-    margin-right: 0;
-  }
-
-  input {
-    width: 100%;
-  }
-
-  img {
-    width: 100%;
-    height: auto; */
-  /* } */
 }
